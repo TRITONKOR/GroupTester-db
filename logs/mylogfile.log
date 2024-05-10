@@ -1,0 +1,967 @@
+2024-05-04 23:39:31 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2669b199
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-04 23:39:31 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testContext'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-04 23:39:31 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-04 23:39:31 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-04 23:39:31 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-04 23:39:32 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-04 23:39:32 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-04 23:39:32 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-04 23:39:32 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-04 23:39:32 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:39:32 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-04 23:43:24 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-04 23:43:24 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testContext'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-04 23:43:24 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-04 23:43:24 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-04 23:43:24 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-04 23:43:25 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-04 23:43:25 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-04 23:43:25 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-04 23:43:25 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-04 23:43:25 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:43:25 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-04 23:57:15 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-04 23:57:15 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-04 23:57:15 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-04 23:57:15 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-04 23:57:15 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-04 23:57:16 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-04 23:57:16 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-04 23:57:16 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-04 23:57:16 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagContext'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRepositoryImpl'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRowMapper'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testsProxy'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRowMapper' via constructor to bean named 'testsProxy'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:57:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-04 23:57:16 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'tagContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tagRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-04 23:59:03 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-04 23:59:03 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-04 23:59:03 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-04 23:59:04 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-04 23:59:04 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-04 23:59:04 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-04 23:59:04 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-04 23:59:04 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-04 23:59:04 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-04 23:59:04 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testContext'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-04 23:59:04 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:59:04 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-04 23:59:45 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-04 23:59:45 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-04 23:59:45 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-04 23:59:46 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-04 23:59:46 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-04 23:59:46 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-04 23:59:46 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-04 23:59:46 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-04 23:59:46 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-04 23:59:46 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-04 23:59:46 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'answerRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-05 00:00:36 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-05 00:00:36 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-05 00:00:36 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-05 00:00:36 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-05 00:00:37 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-05 00:00:37 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-05 00:00:37 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-05 00:00:37 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-05 00:00:37 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-05 00:00:37 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:00:37 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'answerRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-05 00:01:19 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-05 00:01:19 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-05 00:01:19 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-05 00:01:20 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-05 00:01:20 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-05 00:01:20 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-05 00:01:20 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-05 00:01:20 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-05 00:01:20 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-05 00:01:20 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:01:20 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'answerRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'testRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'testRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-05 00:17:00 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-05 00:17:00 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-05 00:17:00 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-05 00:17:00 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-05 00:17:00 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-05 00:17:00 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-05 00:17:00 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-05 00:17:00 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagsProxy'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'tagsProxy'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testsProxy'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRowMapper' via constructor to bean named 'testsProxy'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'jdbcManyToMany'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'jdbcManyToMany' via constructor to bean named 'connectionManager'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-05 00:17:00 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 00:17:00 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'answerRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'questionRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'questionRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'answerRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-05 00:18:48 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-05 00:18:48 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-05 00:18:48 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-05 00:18:48 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-05 00:18:48 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-05 00:18:48 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-05 00:18:48 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-05 00:18:49 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-05 00:18:49 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagsProxy'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'tagsProxy'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testsProxy'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRowMapper' via constructor to bean named 'testsProxy'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'jdbcManyToMany'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'jdbcManyToMany' via constructor to bean named 'connectionManager'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'questionRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRowMapper' via constructor to bean named 'questionRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'answerRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerContext' via constructor to bean named 'answerRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionContext'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionContext' via constructor to bean named 'questionRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportContext'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRepositoryImpl'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRowMapper'
+2024-05-05 00:18:49 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRepositoryImpl'
+2024-05-05 00:18:49 WARN  AnnotationConfigApplicationContext:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'persistenceContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'reportContext' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'reportRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'reportRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'resultRepositoryImpl' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'resultRowMapper' defined in file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'reportRepositoryImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-05-05 00:20:16 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-05 00:20:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-05 00:20:16 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-05 00:20:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-05 00:20:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-05 00:20:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-05 00:20:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-05 00:20:16 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-05 00:20:17 INFO  ConnectionManager:74 - connection pool size = 5
+2024-05-05 00:20:17 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-05 00:20:17 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-05 00:20:17 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-05 00:20:17 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-05 00:20:17 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagsProxy'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'tagsProxy'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testsProxy'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRowMapper' via constructor to bean named 'testsProxy'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'jdbcManyToMany'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'jdbcManyToMany' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'questionRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRowMapper' via constructor to bean named 'questionRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'answerRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerContext' via constructor to bean named 'answerRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionContext' via constructor to bean named 'questionRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRepositoryImpl' via constructor to bean named 'reportRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportContext' via constructor to bean named 'reportRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'reportRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRepositoryImpl' via constructor to bean named 'resultRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultContext' via constructor to bean named 'resultRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagContext' via constructor to bean named 'tagRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testContext' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'userContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'answerContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'questionContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'reportContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'resultContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'tagContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'testContext'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'databaseInitializer'
+2024-05-05 00:20:17 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'connectionManager'
+2024-05-05 00:20:17 INFO  ConnectionManager:37 - connection received from pool[5]
+2024-05-05 00:20:17 INFO  GenericUnitOfWork:25 - Registering null for insert in context.
+2024-05-05 00:20:17 INFO  GenericUnitOfWork:65 - Commit started
+2024-05-05 00:20:17 INFO  ConnectionManager:37 - connection received from pool[5]
+2024-05-05 00:20:17 INFO  ConnectionManager:37 - connection received from pool[4]
+2024-05-05 00:20:17 INFO  GenericUnitOfWork:75 - Commit finished.
+2024-05-05 00:20:17 INFO  ConnectionManager:50 - all connections successfully closed
+2024-05-05 20:59:51 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb
+2024-05-05 20:59:51 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TagsProxy.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\entity\proxy\TestsProxy.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-05 20:59:51 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\Desktop\VoiceGPT\GroupTester-db\persistence\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-05 20:59:52 INFO  ConnectionManager:74 - connection pool size = 10
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №6 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №7 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №8 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №9 opened
+2024-05-05 20:59:52 INFO  ConnectionManager:87 - connection №10 opened
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagsProxy'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'tagsProxy'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testsProxy'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@5056dfcb'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRowMapper' via constructor to bean named 'testsProxy'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'jdbcManyToMany'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'jdbcManyToMany' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'questionRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRowMapper' via constructor to bean named 'questionRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'answerRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerContext' via constructor to bean named 'answerRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionContext' via constructor to bean named 'questionRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRepositoryImpl' via constructor to bean named 'reportRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportContext' via constructor to bean named 'reportRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'userRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'reportRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRepositoryImpl' via constructor to bean named 'resultRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultContext' via constructor to bean named 'resultRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagContext' via constructor to bean named 'tagRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testContext' via constructor to bean named 'testRepositoryImpl'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'userContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'answerContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'questionContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'reportContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'resultContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'tagContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'testContext'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'databaseInitializer'
+2024-05-05 20:59:52 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'connectionManager'
+2024-05-05 20:59:52 INFO  ConnectionManager:37 - connection received from pool[10]
+2024-05-05 20:59:52 INFO  ConnectionManager:50 - all connections successfully closed
+2024-05-10 13:13:26 DEBUG AnnotationConfigApplicationContext:671 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185
+2024-05-10 13:13:26 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\factory\PersistenceContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\AnswerContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\QuestionContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\ReportContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\ResultContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\TagContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\TestContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\context\impl\UserContext.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\AnswersProxy.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\QuestionProxyImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\QuestionsProxy.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\ReportProxyImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\ResultsProxy.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\TagsProxy.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\TestProxyImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\TestsProxy.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\entity\proxy\impl\UserProxyImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\AnswerRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\JdbcManyToMany.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\QuestionRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ReportRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\ResultRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TagRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\TestRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\impl\jdbc\UserRepositoryImpl.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\AnswerRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\QuestionRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\ReportRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\ResultRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\TagRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\TestRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\repository\mapper\impl\UserRowMapper.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\util\ConnectionManager.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\util\DatabaseInitializer.class]
+2024-05-10 13:13:26 DEBUG ClassPathBeanDefinitionScanner:476 - Identified candidate component class: file [C:\Users\Alex\IdeaProjects\GroupTester-db\target\classes\com\tritonkor\persistence\util\PropertyManager.class]
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceConfig'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'persistenceContext'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userContext'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'propertyManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'connectionManager' via constructor to bean named 'propertyManager'
+2024-05-10 13:13:27 INFO  ConnectionManager:74 - connection pool size = 10
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №1 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №2 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №3 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №4 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №5 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №6 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №7 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №8 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №9 opened
+2024-05-10 13:13:27 INFO  ConnectionManager:87 - connection №10 opened
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userRepositoryImpl' via constructor to bean named 'userRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userContext' via constructor to bean named 'userRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerContext'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answerRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionProxyImpl' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRowMapper' via constructor to bean named 'questionProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerRepositoryImpl' via constructor to bean named 'answerRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answerContext' via constructor to bean named 'answerRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionContext'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'answersProxy'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'answersProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testProxyImpl' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRowMapper' via constructor to bean named 'answersProxy'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRowMapper' via constructor to bean named 'testProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionRepositoryImpl' via constructor to bean named 'questionRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionContext' via constructor to bean named 'questionRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportContext'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'userProxyImpl' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultsProxy'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'userProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'testProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRowMapper' via constructor to bean named 'resultsProxy'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportRepositoryImpl' via constructor to bean named 'reportRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportContext' via constructor to bean named 'reportRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultContext'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRepositoryImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'resultRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'reportProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'reportProxyImpl' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'userProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'testProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRowMapper' via constructor to bean named 'reportProxyImpl'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultRepositoryImpl' via constructor to bean named 'resultRowMapper'
+2024-05-10 13:13:27 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'resultContext' via constructor to bean named 'resultRepositoryImpl'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRepositoryImpl'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagRowMapper'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testsProxy'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRowMapper' via constructor to bean named 'testsProxy'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRowMapper'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'questionsProxy'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'questionsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'tagsProxy'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagsProxy' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@100fc185'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'userProxyImpl'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'questionsProxy'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRowMapper' via constructor to bean named 'tagsProxy'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'jdbcManyToMany'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'jdbcManyToMany' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'tagContext' via constructor to bean named 'tagRepositoryImpl'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'testRepositoryImpl'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'testRowMapper'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'tagRowMapper'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testRepositoryImpl' via constructor to bean named 'jdbcManyToMany'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'testContext' via constructor to bean named 'testRepositoryImpl'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'userContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'answerContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'questionContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'reportContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'resultContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'tagContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'persistenceContext' via constructor to bean named 'testContext'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'databaseInitializer'
+2024-05-10 13:13:28 DEBUG DefaultListableBeanFactory:945 - Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'connectionManager'
+2024-05-10 13:13:28 INFO  ConnectionManager:37 - connection received from pool[10]
+2024-05-10 13:13:28 INFO  ConnectionManager:50 - all connections successfully closed
