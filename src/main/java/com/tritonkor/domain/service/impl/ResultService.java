@@ -1,14 +1,10 @@
 package com.tritonkor.domain.service.impl;
 
-import com.tritonkor.domain.dto.ReportStoreDto;
 import com.tritonkor.domain.dto.ResultStoreDto;
 import com.tritonkor.domain.exception.ValidationException;
 import com.tritonkor.persistence.context.factory.PersistenceContext;
-import com.tritonkor.persistence.context.impl.ReportContext;
 import com.tritonkor.persistence.context.impl.ResultContext;
-import com.tritonkor.persistence.entity.Report;
 import com.tritonkor.persistence.exception.EntityNotFoundException;
-import com.tritonkor.persistence.repository.contract.ReportRepository;
 import com.tritonkor.persistence.repository.contract.ResultRepository;
 import jakarta.validation.Validator;
 import java.util.Set;

@@ -9,13 +9,10 @@ import com.tritonkor.persistence.entity.proxy.contract.Questions;
 import com.tritonkor.persistence.entity.proxy.contract.UserProxy;
 import com.tritonkor.persistence.entity.proxy.impl.QuestionsProxy;
 import com.tritonkor.persistence.entity.proxy.impl.UserProxyImpl;
-import com.tritonkor.persistence.exception.EntityNotFoundException;
 import com.tritonkor.persistence.exception.EntityUpdateException;
 import com.tritonkor.persistence.init.FakeDatabaseInitializer;
 import com.tritonkor.persistence.repository.contract.TestRepository;
-import com.tritonkor.persistence.repository.contract.UserRepository;
 import com.tritonkor.persistence.repository.impl.jdbc.TestRepositoryImpl;
-import com.tritonkor.persistence.repository.impl.jdbc.UserRepositoryImpl;
 import com.tritonkor.persistence.util.ConnectionManager;
 import com.tritonkor.persistence.util.PropertyManager;
 import java.sql.SQLException;
@@ -50,7 +47,7 @@ public class TestRepositoryTest {
                         .getResourceAsStream("application.properties")
         );
 
-        context = new AnnotationConfigApplicationContext(PersistenceConfig.class);
+        context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         connectionManager = new ConnectionManager(propertyManager);
         testRepository = context.getBean(TestRepositoryImpl.class);
@@ -74,7 +71,7 @@ public class TestRepositoryTest {
         Test expectedTest = Test.builder()
                 .id(testId)
                 .title("Test 1")
-                .owner_id(ownerId)
+                .ownerId(ownerId)
                 .owner(userProxy)
                 .questions(questions)
                 .tags(tId -> Collections.unmodifiableSet(testRepository.findAllTags(tId)))
@@ -125,7 +122,7 @@ public class TestRepositoryTest {
         Test expectedTest = Test.builder()
                 .id(null)
                 .title("Test 3")
-                .owner_id(ownerId)
+                .ownerId(ownerId)
                 .owner(userProxy)
                 .questions(questions)
                 .tags(tId -> Collections.unmodifiableSet(testRepository.findAllTags(tId)))
@@ -152,7 +149,7 @@ public class TestRepositoryTest {
         Test expectedTest = Test.builder()
                 .id(testId)
                 .title("Test 1")
-                .owner_id(ownerId)
+                .ownerId(ownerId)
                 .owner(userProxy)
                 .questions(questions)
                 .tags(tId -> Collections.unmodifiableSet(testRepository.findAllTags(tId)))
@@ -176,7 +173,7 @@ public class TestRepositoryTest {
         Test expectedTest = Test.builder()
                 .id(testId)
                 .title("Test 1")
-                .owner_id(ownerId)
+                .ownerId(ownerId)
                 .owner(userProxy)
                 .questions(questions)
                 .tags(tId -> Collections.unmodifiableSet(testRepository.findAllTags(tId)))

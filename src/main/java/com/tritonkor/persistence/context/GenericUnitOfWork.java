@@ -82,12 +82,12 @@ public class GenericUnitOfWork<T extends Entity> implements UnitOfWork<T> {
 
     private void commitInsert() {
         var entitiesToBeInserted = context.get(UnitActions.INSERT);
-        repository.save(entitiesToBeInserted);
+        entities = repository.save(entitiesToBeInserted);
     }
 
     private void commitModify() {
         var modifiedEntities = context.get(UnitActions.MODIFY);
-        repository.save(modifiedEntities);
+        entities = repository.save(modifiedEntities);
 /*        for (var entity : modifiedEntities) {
             LOGGER.info("Modifying {} in table.", entity.id());
             repository.save(entity);

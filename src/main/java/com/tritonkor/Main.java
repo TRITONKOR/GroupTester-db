@@ -1,21 +1,18 @@
 package com.tritonkor;
 
-import com.tritonkor.persistence.PersistenceConfig;
-import com.tritonkor.persistence.context.factory.PersistenceContext;
-import com.tritonkor.persistence.entity.User;
-import com.tritonkor.persistence.entity.User.Role;
+import com.tritonkor.persistence.AppConfig;
 import com.tritonkor.persistence.util.ConnectionManager;
 import com.tritonkor.persistence.util.DatabaseInitializer;
-import java.time.LocalDate;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static AnnotationConfigApplicationContext persistenceContext;
 
-        var context = new AnnotationConfigApplicationContext(PersistenceConfig.class);
-        var connectionManager = context.getBean(ConnectionManager.class);
-        var databaseInitializer = context.getBean(DatabaseInitializer.class);
+    public static void main(String[] args) {
+        persistenceContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        var connectionManager = persistenceContext.getBean(ConnectionManager.class);
+        var databaseInitializer = persistenceContext.getBean(DatabaseInitializer.class);
 
         try {
             databaseInitializer.init();
@@ -23,8 +20,5 @@ public class Main {
         } finally {
             connectionManager.closePool();
         }
-
-
-
     }
 }

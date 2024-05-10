@@ -10,7 +10,6 @@ import com.tritonkor.persistence.entity.User.Role;
 import com.tritonkor.persistence.exception.EntityUpdateException;
 import com.tritonkor.persistence.repository.contract.UserRepository;
 import com.tritonkor.persistence.repository.impl.jdbc.UserRepositoryImpl;
-import com.tritonkor.persistence.repository.mapper.impl.UserRowMapper;
 import com.tritonkor.persistence.util.ConnectionManager;
 import com.tritonkor.persistence.util.PropertyManager;
 import com.tritonkor.persistence.init.FakeDatabaseInitializer;
@@ -42,7 +41,7 @@ class UserRepositoryTest {
             UserRepositoryTest.class.getClassLoader()
                 .getResourceAsStream("application.properties")
         );
-        context = new AnnotationConfigApplicationContext(PersistenceConfig.class);
+        context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         connectionManager = new ConnectionManager(propertyManager);
         userRepository = context.getBean(UserRepositoryImpl.class);

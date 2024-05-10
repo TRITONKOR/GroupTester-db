@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS user_test CASCADE ;
 DROP TABLE IF EXISTS test_tag CASCADE ;
 DROP TABLE IF EXISTS results CASCADE;
 DROP TABLE IF EXISTS answers CASCADE;
@@ -90,16 +89,6 @@ CREATE TABLE results (
     create_date TIMESTAMP
 );
 
-CREATE TABLE user_test (
-    user_id     UUID            NOT NULL,
-                FOREIGN KEY (user_id) REFERENCES users(id)
-                ON UPDATE CASCADE
-                ON DELETE CASCADE,
-    test_id        UUID            NOT NULL,
-                FOREIGN KEY (test_id) REFERENCES tests(id)
-                ON UPDATE CASCADE
-                ON DELETE CASCADE
-);
 
 CREATE TABLE test_tag(
     test_id UUID NOT NULL,
