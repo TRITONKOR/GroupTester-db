@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="com.tritonkor.presentation.controller.test.TestListController"
+  styleClass="content-container">
+  <left>
+    <VBox spacing="20">
+      <VBox spacing="10">
+        <!-- Header з пошуком і фільтрацією -->
+        <HBox spacing="10" alignment="CENTER_LEFT">
+          <TextField fx:id="searchField" promptText="Пошук за назвою..." styleClass="search-field"/>
+
+          <ComboBox fx:id="ownerComboBoxFilter" promptText="Виберіть власника"
+            styleClass="combo-box"/>
+
+          <DatePicker fx:id="createDateFromPicker" promptText="Дата створення (з)"
+            styleClass="date-picker"/>
+          <DatePicker fx:id="createDateToPicker" promptText="Дата створення (по)"
+            styleClass="date-picker"/>
+
+          <Button text="Застосувати" onAction="#handleApplyFilters" styleClass="filter-button"/>
+        </HBox>
+
+        <!-- Сортування за логіном -->
+        <HBox spacing="10">
+          <Label text="Сортувати:"/>
+          <Button text="▲ Назва (зрост.)" onAction="#handleSortAscending" styleClass="sort-button"/>
+          <Button text="▼ Назва (спад.)" onAction="#handleSortDescending" styleClass="sort-button"/>
+        </HBox>
+      </VBox>
+
+      <!-- Список користувачів -->
+      <VBox fx:id="testListContainer" spacing="10"/>
+
+      <!-- Пагінація -->
+      <Pagination fx:id="pagination" pageCount="1"/>
+    </VBox>
+  </left>
+  <right>
+    <fx:include source="view/test/CreateTest.fxml" />
+  </right>
+</BorderPane>

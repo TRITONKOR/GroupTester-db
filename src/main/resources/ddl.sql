@@ -7,12 +7,13 @@ DROP TABLE IF EXISTS tests CASCADE;
 DROP TABLE IF EXISTS tags CASCADE;
 DROP TABLE IF EXISTS users CASCADE;
 
+
 CREATE TABLE users (
     PRIMARY KEY (id),
     id          UUID            NOT NULL,
-    username    VARCHAR(32)     NOT NULL UNIQUE,
-    password    VARCHAR(32)     NOT NULL,
-    email       VARCHAR(32)     NOT NULL UNIQUE,
+    username    VARCHAR(128)     NOT NULL UNIQUE,
+    password    VARCHAR(128)     NOT NULL,
+    email       VARCHAR(128)     NOT NULL UNIQUE,
     birthday    DATE            NOT NULL,
     avatar      BYTEA               NULL,
     role        VARCHAR(16)     NOT NULL
@@ -42,7 +43,7 @@ CREATE TABLE questions(
                 FOREIGN KEY (test_id) REFERENCES tests(id)
                 ON UPDATE CASCADE
                 ON DELETE CASCADE,
-    text        VARCHAR (256)   NOT NULL
+    text        VARCHAR (256)   NOT NULL UNIQUE
 );
 
 CREATE TABLE answers (
@@ -52,7 +53,7 @@ CREATE TABLE answers (
                 FOREIGN KEY (question_id) REFERENCES questions(id)
                 ON UPDATE CASCADE
                 ON DELETE CASCADE,
-    text        VARCHAR (256)   NOT NULL,
+    text        VARCHAR (256)   NOT NULL UNIQUE ,
     is_correct  BOOLEAN         NOT NULL
 );
 

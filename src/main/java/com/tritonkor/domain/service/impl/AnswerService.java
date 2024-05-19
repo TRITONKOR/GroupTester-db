@@ -39,9 +39,13 @@ public class AnswerService {
         return new TreeSet<>(answerRepository.findAll());
     }
 
-
-    public Set<Answer> findAllByTestId(UUID questionId) {
+    public Set<Answer> findAllByQuestionId(UUID questionId) {
         return new TreeSet<>(answerContext.repository.findAllByQuestionId(questionId));
+    }
+
+    public Answer findByText(String text) {
+        return answerContext.repository.findByText(text)
+                .orElseThrow(() -> new EntityNotFoundException("Не вдалось знайти відповідь"));
     }
 
     public long count() {

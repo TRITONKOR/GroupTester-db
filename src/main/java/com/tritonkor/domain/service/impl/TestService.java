@@ -1,11 +1,9 @@
 package com.tritonkor.domain.service.impl;
 
-
 import com.tritonkor.domain.dto.TestStoreDto;
 import com.tritonkor.domain.dto.TestUpdateDto;
 import com.tritonkor.domain.exception.AccessDeniedException;
 import com.tritonkor.domain.exception.ValidationException;
-import com.tritonkor.domain.service.impl.AuthorizeService.DtoTypes;
 import com.tritonkor.persistence.context.factory.PersistenceContext;
 import com.tritonkor.persistence.entity.Test;
 import com.tritonkor.persistence.entity.filter.TestFilterDto;
@@ -18,6 +16,9 @@ import java.util.TreeSet;
 import java.util.UUID;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service class providing operations related to tests.
+ */
 @Service
 public class TestService {
 
@@ -34,15 +35,49 @@ public class TestService {
         this.validator = validator;
     }
 
+    /**
+     * Finds a test by its ID.
+     *
+     * @param id the ID of the test
+     * @return the test found
+     * @throws EntityNotFoundException if the test with the specified ID is not found
+     */
     public Test findById(UUID id) {
         return testContext.repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Не вдалось знайти тест"));
     }
 
+    /**
+     * Finds a test by its title.
+     *
+     * @param title the title of the test
+     * @return the test found
+     * @throws EntityNotFoundException if the test with the specified title is not found
+     */
+    public Test findByTitle(String title) {
+        return testContext.repository.findByTitle(title)
+                .orElseThrow(() -> new EntityNotFoundException("Не вдалось знайти тест"));
+    }
+
+    /**
+     * Retrieves all tests.
+     *
+     * @return a set of all tests
+     */
     public Set<Test> findAll() {
         return new TreeSet<>(testRepository.findAll());
     }
 
+    /**
+     * Retrieves all tests based on provided parameters.
+     *
+     * @param offset        the offset for pagination
+     * @param limit         the limit for pagination
+     * @param sortColumn    the column to sort by
+     * @param ascending     the sort order (true for ascending, false for descending)
+     * @param testFilterDto the filter criteria
+     * @return a set of filtered tests
+     */
     public Set<Test> findAll(int offset,
             int limit,
             String sortColumn,
@@ -56,10 +91,27 @@ public class TestService {
                 testFilterDto));
     }
 
+    /**
+     * Retrieves all tests owned by a specific user.
+     *
+     * @param userId the ID of the user
+     * @return a set of tests owned by the user
+     */
     public Set<Test> findAllByUserId(UUID userId) {
         return new TreeSet<>(testRepository.findAllByUserId(userId));
     }
 
+    /**
+     * Retrieves all tests owned by a specific user based on provided parameters.
+     *
+     * @param userId        the ID of the user
+     * @param offset        the offset for pagination
+     * @param limit         the limit for pagination
+     * @param sortColumn    the column to sort by
+     * @param ascending     the sort order (true for ascending, false for descending)
+     * @param testFilterDto the filter criteria
+     * @return a set of filtered tests owned by the user
+     */
     public Set<Test> findAllByUserId(UUID userId,
             int offset,
             int limit,
@@ -75,16 +127,26 @@ public class TestService {
                 testFilterDto));
     }
 
+    /**
+     * Counts the total number of tests.
+     *
+     * @return the total number of tests
+     */
     public long count() {
         return testRepository.count();
     }
 
+    /**
+     * Creates a new test.
+     *
+     * @param testStoreDto the DTO containing information for creating the test
+     * @return the created test
+     * @throws ValidationException if the validation of the input fails
+     */
     public Test create(TestStoreDto testStoreDto) {
         var violations = validator.validate(testStoreDto);
         if (!violations.isEmpty()) {
             throw ValidationException.create("збереженні тесту", violations);
-        } else if (!authorizeService.canCreate(testStoreDto.ownerId(), DtoTypes.TEST)) {
-            throw AccessDeniedException.notTeacherUser("створювати тести");
         }
 
         Test comment = Test.builder()
@@ -102,6 +164,14 @@ public class TestService {
         return testContext.getEntity();
     }
 
+    /**
+     * Updates an existing test.
+     *
+     * @param testUpdateDto the DTO containing information for updating the test
+     * @return the updated test
+     * @throws EntityNotFoundException if the test to be updated is not found
+     * @throws ValidationException     if the validation of the input fails
+     */
     public Test update(TestUpdateDto testUpdateDto) {
         var violations = validator.validate(testUpdateDto);
         if (!violations.isEmpty()) {
@@ -110,11 +180,7 @@ public class TestService {
 
         Test oldTest = findById(testUpdateDto.id());
 
-        if (!authorizeService.canUpdate(oldTest, testUpdateDto.ownerId())) {
-            throw AccessDeniedException.notAuthorUser("оновлювати тести");
-        }
-
-        Test comment = Test.builder()
+        Test test = Test.builder()
                 .id(testUpdateDto.id())
                 .title(testUpdateDto.title())
                 .ownerId(testUpdateDto.ownerId())
@@ -124,10 +190,11 @@ public class TestService {
                 .createdAt(null)
                 .build();
 
-        testContext.registerModified(comment);
+        testContext.registerModified(test);
         testContext.commit();
         return testContext.getEntity();
     }
+
 
     public boolean delete(UUID id, UUID userId) {
         Test test = findById(id);

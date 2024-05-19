@@ -1,7 +1,9 @@
 package com.tritonkor.persistence.repository.impl.jdbc;
 
 
+import com.tritonkor.persistence.entity.Test;
 import com.tritonkor.persistence.entity.User;
+import com.tritonkor.persistence.entity.filter.TestFilterDto;
 import com.tritonkor.persistence.entity.filter.UserFilterDto;
 import com.tritonkor.persistence.repository.GenericJdbcRepository;
 import com.tritonkor.persistence.repository.contract.TableNames;
@@ -61,13 +63,18 @@ public class UserRepositoryImpl extends GenericJdbcRepository<User> implements U
     }
 
     @Override
-    public Set<User> findAll(
+    public Set<User> findAll(int offset, int limit, String sortColumn, boolean ascending,
+            UserFilterDto userFilterDto) {
+        return findAll(offset, limit, sortColumn, ascending, userFilterDto, "");
+    }
+
+    private Set<User> findAll(
             int offset,
             int limit,
             String sortColumn,
             boolean ascending,
-            UserFilterDto userFilterDto) {
-
+            UserFilterDto userFilterDto,  String wherePrefix) {
+        StringBuilder where = new StringBuilder(STR."\{wherePrefix} ");
         HashMap<String, Object> filters = new HashMap<>();
 
         if (!userFilterDto.username().isBlank()) {
@@ -76,14 +83,22 @@ public class UserRepositoryImpl extends GenericJdbcRepository<User> implements U
         if (!userFilterDto.email().isBlank()) {
             filters.put("email", userFilterDto.email());
         }
-        if (Objects.nonNull(userFilterDto.birthday())) {
-            filters.put("birthday", userFilterDto.birthday());
-        }
         if (Objects.nonNull(userFilterDto.role())) {
             filters.put("role", userFilterDto.role());
         }
 
-        return findAll(offset, limit, sortColumn, ascending, filters);
+        // Фільтр по create_date
+        if (Objects.nonNull(userFilterDto.birthdayFrom())
+                && Objects.nonNull(userFilterDto.birthdayTo())) {
+            where.append(
+                    STR."birthday BETWEEN '\{userFilterDto.birthdayFrom()}' AND '\{userFilterDto.birthdayTo()}' ");
+        } else if (Objects.nonNull(userFilterDto.birthdayFrom())) {
+            where.append(STR."birthday >= '\{userFilterDto.birthdayFrom()}' ");
+        } else if (Objects.nonNull(userFilterDto.birthdayTo())) {
+            where.append(STR."birthday <= '\{userFilterDto.birthdayTo()}' ");
+        }
+
+        return findAll(offset, limit, sortColumn, ascending, filters, where.toString());
     }
 
 }

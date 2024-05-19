@@ -1,17 +1,22 @@
 package com.tritonkor.persistence.repository.impl.jdbc;
 
+import com.tritonkor.persistence.entity.Question;
 import com.tritonkor.persistence.entity.Tag;
 import com.tritonkor.persistence.entity.Test;
+import com.tritonkor.persistence.entity.filter.QuestionFilterDto;
+import com.tritonkor.persistence.entity.filter.TagFilterDto;
 import com.tritonkor.persistence.repository.GenericJdbcRepository;
 import com.tritonkor.persistence.repository.contract.TableNames;
 import com.tritonkor.persistence.repository.contract.TagRepository;
 import com.tritonkor.persistence.repository.mapper.impl.TagRowMapper;
 import com.tritonkor.persistence.repository.mapper.impl.TestRowMapper;
 import com.tritonkor.persistence.util.ConnectionManager;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 import org.springframework.stereotype.Repository;
@@ -39,6 +44,11 @@ public class TagRepositoryImpl extends GenericJdbcRepository<Tag> implements Tag
         }
 
         return values;
+    }
+
+    @Override
+    public Optional<Tag> findByName(String name) {
+        return findBy("name", name);
     }
 
     @Override
@@ -86,5 +96,22 @@ public class TagRepositoryImpl extends GenericJdbcRepository<Tag> implements Tag
                 STR."Помилка при видаленні запису з таблиці по testId: \{
                         testId.toString()} і tagId: \{
                         tagId.toString()}");
+    }
+
+    @Override
+    public Set<Tag> findAll(
+            int offset,
+            int limit,
+            String sortColumn,
+            boolean ascending,
+            TagFilterDto tagFilterDto) {
+
+        HashMap<String, Object> filters = new HashMap<>();
+
+        if (!tagFilterDto.name().isBlank()) {
+            filters.put("name", tagFilterDto.name());
+        }
+
+        return findAll(offset, limit, sortColumn, ascending, filters);
     }
 }

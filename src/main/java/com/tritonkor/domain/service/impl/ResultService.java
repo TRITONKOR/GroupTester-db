@@ -1,6 +1,7 @@
 package com.tritonkor.domain.service.impl;
 
 import com.tritonkor.domain.dto.ResultStoreDto;
+import com.tritonkor.domain.dto.ResultUpdateDto;
 import com.tritonkor.domain.exception.ValidationException;
 import com.tritonkor.persistence.context.factory.PersistenceContext;
 import com.tritonkor.persistence.context.impl.ResultContext;
@@ -54,7 +55,7 @@ public class ResultService {
     public Result create(ResultStoreDto resultStoreDto) {
         var violations = validator.validate(resultStoreDto);
         if (!violations.isEmpty()) {
-            throw ValidationException.create("збереженні питання", violations);
+            throw ValidationException.create("збереженні результата", violations);
         }
 
         Result report = Result.builder()
@@ -69,6 +70,28 @@ public class ResultService {
                 .createdAt(null).build();
 
         resultContext.registerNew(report);
+        resultContext.commit();
+        return resultContext.getEntity();
+    }
+
+    public Result update(ResultUpdateDto resultUpdateDto) {
+        var violations = validator.validate(resultUpdateDto);
+        if (!violations.isEmpty()) {
+            throw ValidationException.create("оновленні результата", violations);
+        }
+
+        Result report = Result.builder()
+                .id(resultUpdateDto.id())
+                .ownerId(resultUpdateDto.ownerId())
+                .owner(null)
+                .testId(resultUpdateDto.testId())
+                .test(null)
+                .reportId(resultUpdateDto.reportId())
+                .report(null)
+                .mark(resultUpdateDto.mark())
+                .createdAt(null).build();
+
+        resultContext.registerModified(report);
         resultContext.commit();
         return resultContext.getEntity();
     }

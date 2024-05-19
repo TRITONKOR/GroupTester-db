@@ -26,12 +26,24 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Abstract class that provides a generic JDBC repository implementation for CRUD operations.
+ *
+ * @param <T> the type of entity managed by this repository
+ */
 public abstract class GenericJdbcRepository<T extends Entity> implements Repository<T> {
 
     private final ConnectionManager connectionManager;
     private final RowMapper<T> rowMapper;
     private final String tableName;
 
+    /**
+     * Constructs a new {@code GenericJdbcRepository} instance.
+     *
+     * @param connectionManager the connection manager to manage database connections
+     * @param rowMapper         the row mapper to map rows of result sets to entity objects
+     * @param tableName         the name of the database table
+     */
     public GenericJdbcRepository(
             ConnectionManager connectionManager, RowMapper<T> rowMapper, String tableName) {
         this.connectionManager = connectionManager;
@@ -39,12 +51,24 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
         this.tableName = tableName;
     }
 
-    // Переписати на аспекти spring Context
+    /**
+     * Finds an entity by its unique identifier.
+     *
+     * @param id the unique identifier of the entity
+     * @return an optional containing the found entity or empty if not found
+     */
     @Override
     public Optional<T> findById(UUID id) {
         return findBy("id", id);
     }
 
+    /**
+     * Finds an entity by a specified column and value.
+     *
+     * @param column the column to search by
+     * @param value  the value to search for
+     * @return an optional containing the found entity or empty if not found
+     */
     @Override
     public Optional<T> findBy(String column, Object value) {
         final String sql =
@@ -56,10 +80,9 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                         column} = ?
         """;
 
-        UUID id = (UUID) value;
         try (Connection connection = connectionManager.get();
                 PreparedStatement statement = connection.prepareStatement(sql)) {
-            statement.setObject(1, id, Types.OTHER);
+            statement.setObject(1, value, Types.OTHER);
             ResultSet resultSet = statement.executeQuery();
             resultSet.next();
             return Optional.ofNullable(rowMapper.mapRow(resultSet));
@@ -67,6 +90,13 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
             return Optional.empty();
         }
     }
+
+    /**
+     * Finds all entities matching a specific where query.
+     *
+     * @param whereQuery the where query to filter entities
+     * @return a set of matching entities
+     */
     @Override
     public Set<T> findAllWhere(String whereQuery) {
         try (Connection connection = connectionManager.get()) {
@@ -76,6 +106,7 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                     STR."Помилка при отриманні всіх запитів з таблиці: \{tableName}");
         }
     }
+
 
     private Set<T> findAllWhere(String whereQuery, Connection connection) {
         final String sql = STR."""
@@ -91,7 +122,6 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
             while (resultSet.next()) {
                 entities.add(rowMapper.mapRow(resultSet));
             }
-            // LOGGER.info("found all users - [%s]".formatted(users));
             return entities;
         } catch (SQLException throwables) {
             throw new EntityNotFoundException(
@@ -99,6 +129,11 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
         }
     }
 
+    /**
+     * Finds all entities in the table.
+     *
+     * @return a set of all entities
+     */
     @Override
     public Set<T> findAll() {
         final String sql = STR."""
@@ -116,11 +151,19 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
             // LOGGER.info("found all users - [%s]".formatted(users));
             return entities;
         } catch (SQLException throwables) {
+            System.out.println(throwables);
             throw new EntityNotFoundException(
                     STR."Помилка при отриманні всіх запитів з таблиці: \{tableName}");
         }
     }
 
+    /**
+     * Finds entities with pagination.
+     *
+     * @param offset the offset of the first entity to retrieve
+     * @param limit  the maximum number of entities to retrieve
+     * @return a set of entities
+     */
     @Override
     public Set<T> findAll(int offset, int limit) {
         return findAll(offset, limit, "id", true);
@@ -136,6 +179,17 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
         return findAll(offset, limit, sortColumn, ascending, filters, "");
     }
 
+    /**
+     * Finds entities with pagination and sorting.
+     *
+     * @param offset      the offset of the first entity to retrieve
+     * @param limit       the maximum number of entities to retrieve
+     * @param sortColumn  the column to sort by
+     * @param ascending   whether to sort in ascending order
+     * @param filters     additional filters to apply
+     * @param where       additional where clause
+     * @return a set of entities
+     */
     @Override
     public Set<T> findAll(int offset, int limit, String sortColumn, boolean ascending,
             Map<String, Object> filters, String where) {
@@ -151,6 +205,8 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                 values.add(value);
             }
         });
+        System.out.println(filters);
+        System.out.println(whereClause);
 
         String sortDirection = ascending ? "ASC" : "DESC";
         String sql = STR."""
@@ -161,6 +217,8 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                 LIMIT ?
                OFFSET ?
         """;
+
+        System.out.println(sql);
 
         try (Connection connection = connectionManager.get();
                 PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -177,11 +235,17 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
             }
             return entities;
         } catch (SQLException e) {
+            System.out.println(e.getMessage());
             throw new EntityNotFoundException(
                     "Помилка при отриманні даних з таблиці: %s".formatted(tableName));
         }
     }
 
+    /**
+     * Counts the number of entities in the table.
+     *
+     * @return the count of entities
+     */
     @Override
     public long count() {
         final String sql = STR."""
@@ -197,11 +261,19 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
             // LOGGER.info("count of users - {}", result);
             return count;
         } catch (SQLException throwables) {
+            System.out.println(throwables.getMessage());
             throw new EntityNotFoundException(
                     STR."Помилка при отриманні кількості записів з таблиці: \{tableName}");
         }
     }
 
+    /**
+     * Saves an entity to the table. If the entity does not exist, it will be inserted.
+     * Otherwise, it will be updated.
+     *
+     * @param entity the entity to save
+     * @return the saved entity
+     */
     @Override
     public T save(final T entity) {
         var values = tableValues(entity);
@@ -309,10 +381,10 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                         placeholders})
         """;
 
-        if (attributes.stream().anyMatch(a -> a.equals("created_at"))) {
+
+        if (attributes.stream().anyMatch(a -> a.equals("create_date"))) {
             listOfValues.forEach(values -> {
-                values.put("created_at", LocalDateTime.now()); // created_at
-                values.put("updated_at", LocalDateTime.now()); // updated_at
+                values.put("create_date", LocalDateTime.now()); // create_dat
             });
         }
 
@@ -331,6 +403,9 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                              SET \{attributesString}
                            WHERE id = ?
                          """;
+        if (attributes.stream().anyMatch(a -> a.equals("create_date"))) {
+            attributes.remove("create_date");
+        }
 
         return batchExecute(listOfValues, sql, "Помилка при оновленні існуючого запису в таблиці");
     }
@@ -368,6 +443,7 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
                 }
             } catch (SQLException throwables) {
                 // В разі виникнення помилки, робимо ролбек транзакції
+                System.out.println(throwables.getMessage());
                 connection.rollback();
                 throw new EntityUpdateException(exceptionMessage);
             }
@@ -395,7 +471,7 @@ public abstract class GenericJdbcRepository<T extends Entity> implements Reposit
         List<String> ids = listOfValues.stream().map(values -> {
             UUID id = (UUID) values.stream()
                     .filter(UUID.class::isInstance)
-                    .findFirst()
+                    .reduce((first, second) -> second)
                     .orElseThrow(() -> new NoSuchElementException("UUID not found"));
 
             return STR."'\{id.toString()}'";

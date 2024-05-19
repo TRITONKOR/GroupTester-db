@@ -40,15 +40,6 @@ public class AuthorizeService {
         return test.getOwnerId() == userId && !user.getRole().equals(Role.STUDENT);
     }
 
-    // оновлювати можуть дані лише власник акаунту (аутентифікований користувач) або адміністратори
-    public boolean canUpdate(User user) {
-        if (user.getRole() == Role.ADMIN) {
-            return true;
-        } else {
-            return user.getId() == authenticationService.getUser().getId();
-        }
-    }
-
     private User getUser(UUID userId) {
         return userRepository.findById(userId)
             .orElseThrow(() -> new EntityNotFoundException("Користувача не знайдено"));

@@ -10,9 +10,9 @@ DROP TABLE IF EXISTS users CASCADE;
 CREATE TABLE users (
     PRIMARY KEY (id),
     id          UUID            NOT NULL,
-    username    VARCHAR(32)     NOT NULL UNIQUE,
-    password    VARCHAR(32)     NOT NULL,
-    email       VARCHAR(32)     NOT NULL UNIQUE,
+    username    VARCHAR(128)     NOT NULL UNIQUE,
+    password    VARCHAR(128)     NOT NULL,
+    email       VARCHAR(128)     NOT NULL UNIQUE,
     birthday    DATE            NOT NULL,
     avatar      BYTEA               NULL,
     role        VARCHAR(16)     NOT NULL

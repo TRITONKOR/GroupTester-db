@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="com.tritonkor.presentation.controller.answer.CreateAnswerController"
+  prefHeight="400.0" prefWidth="600.0">
+  <VBox spacing="10.0" alignment="CENTER" prefWidth="500.0" prefHeight="400.0">
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Label text="Створити відповідь" fx:id="answerLabel"/>
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Label text="Текст:" />
+      <TextField fx:id="textField" />
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Label text ="Чи правильна:" />
+      <CheckBox fx:id="isCorrectCheckBox"/>
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Button fx:id="saveButton" text="Зберегти" onAction="#onSave"/>
+      <Button text="Оновити" onAction="#onUpdate"/>
+    </HBox>
+  </VBox>
+</AnchorPane>

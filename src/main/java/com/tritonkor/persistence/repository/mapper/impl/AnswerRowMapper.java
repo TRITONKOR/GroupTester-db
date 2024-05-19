@@ -29,7 +29,7 @@ public class AnswerRowMapper implements RowMapper<Answer> {
                 .id(answerId)
                 .questionId(questionId)
                 .question(questionProxy)
-                .text(rs.getString("test"))
+                .text(rs.getString("text"))
                 .isCorrect(rs.getBoolean("is_correct"))
                 .build();
     }

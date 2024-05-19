@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+  xmlns:atlantafx="atlantafx.styles"
+  fx:controller="com.tritonkor.presentation.controller.answer.AnswerListController"
+
+  styleClass="content-container">
+  <left>
+    <VBox spacing="20">
+      <VBox spacing="10">
+        <!-- Сортування за логіном -->
+        <HBox spacing="10">
+          <Label text="Сортувати:"/>
+          <Button text="▲ Текст (зрост.)" onAction="#handleSortAscending" styleClass="sort-button"/>
+          <Button text="▼ Текст (спад.)" onAction="#handleSortDescending" styleClass="sort-button"/>
+        </HBox>
+      </VBox>
+
+      <!-- Список користувачів -->
+      <VBox fx:id="answerListContainer" spacing="10"/>
+
+      <!-- Пагінація -->
+      <Pagination fx:id="pagination" pageCount="1"/>
+    </VBox>
+  </left>
+  <right>
+    <fx:include source="view/answer/CreateAnswer.fxml" />
+  </right>
+</BorderPane>

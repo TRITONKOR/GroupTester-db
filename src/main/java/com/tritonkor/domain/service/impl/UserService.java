@@ -13,6 +13,7 @@ import com.tritonkor.persistence.exception.EntityNotFoundException;
 import com.tritonkor.persistence.repository.contract.UserRepository;
 import com.password4j.Password;
 import jakarta.validation.Validator;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Objects;
 import java.util.Set;
@@ -31,7 +32,7 @@ public class UserService {
     private Path defaultAvatar;
 
     public UserService(PersistenceContext persistenceContext, AuthorizeService authorizeService,
-            FileService fileService, Validator validator) {
+            FileService fileService, Validator validator) throws IOException {
         this.userContext = persistenceContext.users;
         this.userRepository = persistenceContext.users.repository;
         this.authorizeService = authorizeService;
@@ -77,7 +78,7 @@ public class UserService {
         return userRepository.count();
     }
 
-    public User create(UserStoreDto userStoreDto) {
+    public User create(UserStoreDto userStoreDto) throws IOException {
         var violations = validator.validate(userStoreDto);
         if (!violations.isEmpty()) {
             throw ValidationException.create("збереженні користувача", violations);
@@ -86,7 +87,8 @@ public class UserService {
         User user = User.builder()
                 .id(null)
                 .username(userStoreDto.username())
-                .email(userStoreDto.email()).password(userStoreDto.password())
+                .email(userStoreDto.email())
+                .password(Password.hash(userStoreDto.password()).withBcrypt().getResult())
                 .avatar(fileService.getBytes(userStoreDto.avatar()))
                 .birthday(userStoreDto.birthday())
                 .role(Objects.nonNull(userStoreDto.role()) ? userStoreDto.role() : Role.STUDENT)
@@ -97,7 +99,7 @@ public class UserService {
         return userContext.getEntity();
     }
 
-    public User update(UserUpdateDto userUpdateDto) {
+    public User update(UserUpdateDto userUpdateDto) throws IOException {
         var violations = validator.validate(userUpdateDto);
         if (!violations.isEmpty()) {
             throw ValidationException.create("оновленні користувача", violations);
@@ -105,9 +107,6 @@ public class UserService {
 
         User oldUser = findById(userUpdateDto.id());
 
-        if (!authorizeService.canUpdate(oldUser)) {
-            throw AccessDeniedException.notAuthorUser("оновлювати користувача");
-        }
         User user = User.builder()
                 .id(userUpdateDto.id())
                 .username(userUpdateDto.username())

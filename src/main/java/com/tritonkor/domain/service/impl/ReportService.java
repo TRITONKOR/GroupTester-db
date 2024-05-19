@@ -1,6 +1,7 @@
 package com.tritonkor.domain.service.impl;
 
 import com.tritonkor.domain.dto.ReportStoreDto;
+import com.tritonkor.domain.dto.ReportUpdateDto;
 import com.tritonkor.domain.exception.ValidationException;
 import com.tritonkor.persistence.context.factory.PersistenceContext;
 import com.tritonkor.persistence.context.impl.ReportContext;
@@ -53,7 +54,7 @@ public class ReportService {
     public Report create(ReportStoreDto reportStoreDto) {
         var violations = validator.validate(reportStoreDto);
         if (!violations.isEmpty()) {
-            throw ValidationException.create("збереженні питання", violations);
+            throw ValidationException.create("збереженні звіту", violations);
         }
 
         Report report = Report.builder()
@@ -67,6 +68,27 @@ public class ReportService {
                 .build();
 
         reportContext.registerNew(report);
+        reportContext.commit();
+        return reportContext.getEntity();
+    }
+
+    public Report update(ReportUpdateDto reportUpdateDto) {
+        var violations = validator.validate(reportUpdateDto);
+        if (!violations.isEmpty()) {
+            throw ValidationException.create("оновленні звіту", violations);
+        }
+
+        Report report = Report.builder()
+                .id(reportUpdateDto.id())
+                .ownerId(reportUpdateDto.ownerId())
+                .owner(null)
+                .testId(reportUpdateDto.testId())
+                .test(null)
+                .results(null)
+                .createdAt(null)
+                .build();
+
+        reportContext.registerModified(report);
         reportContext.commit();
         return reportContext.getEntity();
     }

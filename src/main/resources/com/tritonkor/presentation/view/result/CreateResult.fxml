@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="com.tritonkor.presentation.controller.result.CreateResultController"
+  prefHeight="400.0" prefWidth="600.0">
+  <VBox spacing="10.0" alignment="CENTER" prefWidth="500.0" prefHeight="400.0">
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Label text="Створити результат" fx:id="resultLabel"/>
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <ComboBox fx:id="testComboBox" promptText="Виберіть тест"
+        styleClass="combo-box"/>
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <ComboBox fx:id="ownerComboBox" promptText="Виберіть власника"
+        styleClass="combo-box"/>
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Spinner  fx:id="markSpinner" styleClass="spinner"/>
+    </HBox>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+      <Button fx:id="saveButton" text="Зберегти" onAction="#onSave"/>
+      <Button text="Оновити" onAction="#onUpdate"/>
+    </HBox>
+  </VBox>
+</AnchorPane>

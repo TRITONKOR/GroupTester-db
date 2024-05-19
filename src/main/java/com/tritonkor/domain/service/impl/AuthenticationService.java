@@ -8,6 +8,9 @@ import com.tritonkor.persistence.repository.contract.UserRepository;
 import com.password4j.Password;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service class responsible for user authentication.
+ */
 @Service
 public class AuthenticationService {
 
@@ -18,6 +21,15 @@ public class AuthenticationService {
         this.userRepository = persistenceContext.users.repository;
     }
 
+    /**
+     * Authenticates a user with the provided credentials.
+     *
+     * @param username the username of the user
+     * @param password the password of the user
+     * @return true if authentication is successful, false otherwise
+     * @throws UserAlreadyAuthenticatedException if a user is already authenticated
+     * @throws AuthenticationException          if authentication fails
+     */
     public boolean authenticate(String username, String password) {
         // Перевіряємо, чи вже існує аутентифікований користувач
         if (user != null) {
@@ -36,14 +48,29 @@ public class AuthenticationService {
         return true;
     }
 
+    /**
+     * Checks if a user is authenticated.
+     *
+     * @return true if the user is authenticated, false otherwise
+     */
     public boolean isAuthenticated() {
         return user != null;
     }
 
+    /**
+     * Retrieves the authenticated user.
+     *
+     * @return the authenticated user
+     */
     public User getUser() {
         return user;
     }
 
+    /**
+     * Logs out the authenticated user.
+     *
+     * @throws UserAlreadyAuthenticatedException if no user is currently authenticated
+     */
     public void logout() {
         if (user == null) {
             throw new UserAlreadyAuthenticatedException("Ви ще не автентифікавані.");

@@ -1,17 +1,22 @@
 package com.tritonkor.persistence.repository.impl.jdbc;
 
 import com.tritonkor.persistence.entity.Answer;
+import com.tritonkor.persistence.entity.Question;
 import com.tritonkor.persistence.entity.Test;
+import com.tritonkor.persistence.entity.filter.AnswerFilterDto;
+import com.tritonkor.persistence.entity.filter.QuestionFilterDto;
 import com.tritonkor.persistence.repository.GenericJdbcRepository;
 import com.tritonkor.persistence.repository.contract.AnswerRepository;
 import com.tritonkor.persistence.repository.contract.TableNames;
 import com.tritonkor.persistence.repository.mapper.impl.AnswerRowMapper;
 import com.tritonkor.persistence.util.ConnectionManager;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 import org.springframework.stereotype.Repository;
@@ -44,8 +49,31 @@ public class AnswerRepositoryImpl extends GenericJdbcRepository<Answer> implemen
 
     @Override
     public Set<Answer> findAllByQuestionId(UUID questionId) {
-        return findAllWhere(STR."question_id = \{questionId}");
+        return findAllWhere(STR."question_id = '\{questionId}'");
     }
 
+    @Override
+    public Optional<Answer> findByText(String text) {
+        return findBy("text", text);
+    }
 
+    @Override
+    public Set<Answer> findAll(
+            int offset,
+            int limit,
+            String sortColumn,
+            boolean ascending,
+            AnswerFilterDto answerFilterDto) {
+
+        HashMap<String, Object> filters = new HashMap<>();
+
+        if (!answerFilterDto.text().isBlank()) {
+            filters.put("text", answerFilterDto.text());
+        }
+        if (Objects.nonNull(answerFilterDto.questionId())) {
+            filters.put("question_id", answerFilterDto.questionId());
+        }
+
+        return findAll(offset, limit, sortColumn, ascending, filters);
+    }
 }

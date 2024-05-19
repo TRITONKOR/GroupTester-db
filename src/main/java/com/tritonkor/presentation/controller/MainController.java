@@ -1,125 +1,92 @@
 package com.tritonkor.presentation.controller;
 
-import com.tritonkor.domain.dto.UserStoreDto;
-import com.tritonkor.domain.service.impl.FileService;
-import com.tritonkor.domain.service.impl.UserService;
-import com.tritonkor.persistence.entity.User.Role;
-import com.tritonkor.presentation.viewmodel.UserViewModel;
-import java.net.URL;
+import static com.tritonkor.presentation.Runner.springContext;
+
+import com.tritonkor.domain.service.impl.AuthenticationService;
+import com.tritonkor.presentation.Runner;
+import com.tritonkor.presentation.util.SpringFXMLLoader;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Path;
-import java.time.LocalDate;
-import java.util.ResourceBundle;
-import java.util.UUID;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.FileChooser;
-import javafx.stage.FileChooser.ExtensionFilter;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-
+/**
+ * Controller class for the main application window.
+ */
 @Component
 public class MainController {
-
     @Autowired
-    private UserService userService;
-    @Autowired
-    private FileService fileService;
+    private AuthenticationService authenticationService;
     @FXML
-    private Label idLabel;
+    private ToggleGroup toggleGroup;
     @FXML
-    private TextField usernameField;
+    private BorderPane root;
     @FXML
-    private TextField emailField;
+    private Label username;
     @FXML
-    private PasswordField passwordField;
+    private Label role;
     @FXML
-    private ImageView photoImageView;
-    @FXML
-    private DatePicker birthdayPicker;
-    @FXML
-    private ComboBox<Role> roleComboBox;
+    private ImageView avatar;
 
-    private UserViewModel userViewModel;
-
+    /**
+     * Initializes the main window.
+     */
     @FXML
     public void initialize() {
-        // Ініціалізація ролей у ComboBox
-        roleComboBox.getItems().addAll(Role.values());
-        roleComboBox.setValue(Role.STUDENT);
+        // Встановлюємо значення за замовчуванням
+        ToggleButton initialButton = (ToggleButton) toggleGroup.getToggles().getFirst();
+        initialButton.setSelected(true);
 
-        // Створення користувача з пустими даними як приклад
-        userViewModel = new UserViewModel(
-                UUID.randomUUID(),
-                "JohnDoe",
-                "john.doe@example.com",
-                "password123",
-                new Image(fileService.getPathFromResource("default-avatar.png").toUri().toString()),
-                fileService.getPathFromResource("default-avatar.png"),
-                LocalDate.of(1990, 1, 1),
-                Role.STUDENT
-        );
+        username.setText(STR."Username: \{authenticationService.getUser().getUsername()}");
+        role.setText(STR."Role: \{authenticationService.getUser().getRole().getName()}");
 
-        // Зв'язування властивостей ViewModel з View
-        bindFieldsToViewModel();
+        InputStream inputStream = new ByteArrayInputStream(authenticationService.getUser().getAvatar());
+        Image image = new Image(inputStream);
+        avatar.setImage(image);
     }
 
-    private void bindFieldsToViewModel() {
-        idLabel.setText(userViewModel.getId().toString());
-        usernameField.textProperty().bindBidirectional(userViewModel.usernameProperty());
-        emailField.textProperty().bindBidirectional(userViewModel.emailProperty());
-        passwordField.textProperty().bindBidirectional(userViewModel.passwordProperty());
-        photoImageView.imageProperty().bindBidirectional(userViewModel.avatarProperty());
-        birthdayPicker.valueProperty().bindBidirectional(userViewModel.birthdayProperty());
-        roleComboBox.valueProperty().bindBidirectional(userViewModel.roleProperty());
-    }
-
+    /**
+     * Handles menu selection.
+     *
+     * @param actionEvent the event triggering the menu selection
+     */
     @FXML
-    private void onUploadPhoto() {
-        FileChooser fileChooser = new FileChooser();
-        var extensionFilter = new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg");
-        fileChooser.getExtensionFilters().add(extensionFilter);
-        Path path = fileChooser.showOpenDialog(null).toPath();
-
-        if (!path.toString().isBlank()) {
-            Image image = new Image(path.toUri().toString());
-            userViewModel.setAvatar(image);
-            userViewModel.setAvatarPath(path);
+    private void handleMenuSelection(ActionEvent actionEvent) {
+        ToggleButton selectedButton = (ToggleButton) toggleGroup.getSelectedToggle();
+        if (selectedButton != null) {
+            switch (selectedButton.getText()) {
+                case "Користувачі" -> switchPage(Path.of("view", "user", "UserList.fxml").toString());
+                case "Тести" -> switchPage(Path.of("view", "test", "TestList.fxml").toString());
+                case "Звіти" -> switchPage(Path.of("view", "report", "ReportList.fxml").toString());
+                case "Теги" -> switchPage(Path.of("view", "tag", "TagList.fxml").toString());
+                default -> System.err.println(STR."Unknown selection: \{selectedButton.getText()}");
+            }
         }
     }
 
-    @FXML
-    private void onSave() {
-        System.out.println("Saving User Data: " + userViewModel);
-
-        // Відображення інформації через Alert
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("User Information");
-        alert.setHeaderText("User Data Saved Successfully");
-        alert.setContentText(userViewModel.toString());
-        alert.showAndWait();
-
-        UserStoreDto userStoreDto = new UserStoreDto(
-                userViewModel.getUsername(),
-                userViewModel.getEmail(),
-                userViewModel.getPassword(),
-                userViewModel.getAvatarPath(),
-                userViewModel.getBirthday(),
-                userViewModel.getRole()
-        );
-        userService.create(userStoreDto);
-    }
-
-    @FXML
-    private void onCancel() {
-        System.out.println("Operation Cancelled");
+    /**
+     * Switches the page to the specified FXML file.
+     *
+     * @param fxmlFile the path to the FXML file
+     */
+    public void switchPage(String fxmlFile) {
+        try {
+            var fxmlLoader = new SpringFXMLLoader(springContext);
+            Pane newPage = (Pane) fxmlLoader.load(Runner.class.getResource(fxmlFile));
+            root.setCenter(newPage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

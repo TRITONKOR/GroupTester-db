@@ -10,6 +10,7 @@ import java.util.UUID;
 
 /**
  * The {@code Test} class represents a test in the system.
+ * It extends the {@code Entity} class and implements {@code Comparable<Test>}.
  */
 public class Test extends Entity implements Comparable<Test> {
 
@@ -20,6 +21,17 @@ public class Test extends Entity implements Comparable<Test> {
     private Questions questions;
     private final LocalDateTime createdAt;
 
+    /**
+     * Constructs a new {@code Test} instance.
+     *
+     * @param id the unique identifier for the test
+     * @param title the title of the test
+     * @param ownerId the unique identifier of the owner
+     * @param owner the proxy for the owner
+     * @param questions the questions associated with the test
+     * @param tags the tags associated with the test
+     * @param createdAt the timestamp when the test was created
+     */
     public Test(UUID id, String title, UUID ownerId, UserProxy owner,
             Questions questions, Tags tags,
             LocalDateTime createdAt) {
@@ -114,25 +126,57 @@ public class Test extends Entity implements Comparable<Test> {
         return createdAt;
     }
 
+    /**
+     * Lazily fetches the user associated with the test.
+     *
+     * @return The user associated with the test.
+     */
     public User getUserLazy() {
         return owner.get(id);
     }
 
+    /**
+     * Lazily fetches the questions associated with the test.
+     *
+     * @return A set of questions associated with the test.
+     */
     public Set<Question> getQuestionsLazy() {return questions.get(id);}
 
+    /**
+     * Lazily fetches the tags associated with the test.
+     *
+     * @return A set of tags associated with the test.
+     */
     public Set<Tag> getTagsLazy() {
         return tags.get(id);
     }
 
+    /**
+     * Gets the unique identifier of the owner of the test.
+     *
+     * @return The owner's unique identifier.
+     */
     public UUID getOwnerId() {
         return ownerId;
     }
 
+    /**
+     * Compares this test to another test based on the creation timestamp.
+     *
+     * @param o the test to compare to
+     * @return a negative integer, zero, or a positive integer as this test
+     *         is less than, equal to, or greater than the specified test
+     */
     @Override
     public int compareTo(Test o) {
         return this.createdAt.compareTo(o.createdAt);
     }
 
+    /**
+     * Computes a hash code for this test based on its title.
+     *
+     * @return A hash code value for this test.
+     */
     @Override
     public int hashCode() {
         return Objects.hash(title);

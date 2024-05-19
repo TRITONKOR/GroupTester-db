@@ -12,6 +12,11 @@ import java.util.UUID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * A generic implementation of Unit of Work pattern for managing entity operations in a batch.
+ *
+ * @param <T> the type of entity managed by this unit of work
+ */
 public class GenericUnitOfWork<T extends Entity> implements UnitOfWork<T> {
     final Logger LOGGER = LoggerFactory.getLogger(GenericUnitOfWork.class);
     private final Map<UnitActions, List<T>> context;
@@ -19,6 +24,11 @@ public class GenericUnitOfWork<T extends Entity> implements UnitOfWork<T> {
 
     private Set<T> entities;
 
+    /**
+     * Constructs a GenericUnitOfWork with the specified repository.
+     *
+     * @param repository the repository for managing entity operations
+     */
     public GenericUnitOfWork(Repository<T> repository) {
         this.repository = repository;
         context = new HashMap<>();
@@ -88,10 +98,6 @@ public class GenericUnitOfWork<T extends Entity> implements UnitOfWork<T> {
     private void commitModify() {
         var modifiedEntities = context.get(UnitActions.MODIFY);
         entities = repository.save(modifiedEntities);
-/*        for (var entity : modifiedEntities) {
-            LOGGER.info("Modifying {} in table.", entity.id());
-            repository.save(entity);
-        }*/
     }
 
     private void commitDelete() {
@@ -99,16 +105,34 @@ public class GenericUnitOfWork<T extends Entity> implements UnitOfWork<T> {
         repository.delete(deletedEntities.stream().map(Entity::getId).toList());
     }
 
+    /**
+     * Retrieves the entity with the specified ID from the committed entities set.
+     *
+     * @param id the ID of the entity to retrieve
+     * @return the entity with the specified ID
+     * @throws EntityNotFoundException if the entity with the specified ID is not found in the committed entities
+     */
     public T getEntity(UUID id) {
         return entities.stream().filter(e -> e.getId().equals(id)).findFirst()
                 .orElseThrow(() -> new EntityNotFoundException(
                         "Спочатку потрібно зробити операцію додавання чи оновлення. Або це дивна помилка..."));
     }
 
+    /**
+     * Retrieves the first entity from the committed entities set.
+     *
+     * @return the first entity from the committed entities set
+     * @throws EntityNotFoundException if no entities are found in the committed entities set
+     */
     public T getEntity() {
         return entities.stream().findFirst().orElseThrow();
     }
 
+    /**
+     * Retrieves all entities from the committed entities set.
+     *
+     * @return the set of entities from the committed entities set
+     */
     public Set<T> getEntities() {
         return entities;
     }

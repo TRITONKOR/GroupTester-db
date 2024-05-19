@@ -34,6 +34,11 @@ public class QuestionService {
                 .orElseThrow(() -> new EntityNotFoundException("Не вдалось знайти питання"));
     }
 
+    public Question findByText(String text) {
+        return questionContext.repository.findByText(text)
+                .orElseThrow(() -> new EntityNotFoundException("Не вдалось знайти питання"));
+    }
+
     public Set<Question> findAll() {
         return new TreeSet<>(questionRepository.findAll());
     }
@@ -50,6 +55,7 @@ public class QuestionService {
     public Question create(QuestionStoreDto questionStoreDto) {
         var violations = validator.validate(questionStoreDto);
         if (!violations.isEmpty()) {
+            System.out.println(violations);
             throw ValidationException.create("збереженні питання", violations);
         }
 
@@ -60,6 +66,8 @@ public class QuestionService {
                 .testId(questionStoreDto.testId())
                 .test(null)
                 .build();
+
+        System.out.println(question);
 
         questionContext.registerNew(question);
         questionContext.commit();

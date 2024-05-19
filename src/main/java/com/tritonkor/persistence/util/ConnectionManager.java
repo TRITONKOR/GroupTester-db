@@ -14,6 +14,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+/**
+ * Manages a pool of database connections.
+ * This class initializes a pool of connections and provides methods to obtain and close connections.
+ */
 @Component
 public class ConnectionManager {
 
@@ -27,11 +31,21 @@ public class ConnectionManager {
     private static List<Connection> sourceConnections;
     final Logger LOGGER = LoggerFactory.getLogger(ConnectionManager.class);
 
+    /**
+     * Constructs a ConnectionManager and initializes the connection pool.
+     *
+     * @param propertyManager the PropertyManager to fetch database properties
+     */
     public ConnectionManager(PropertyManager propertyManager) {
         this.propertyManager = propertyManager;
         initConnectionPool();
     }
 
+    /**
+     * Retrieves a connection from the pool.
+     *
+     * @return a Connection object from the pool
+     */
     public Connection get() {
         try {
             LOGGER.info("connection received from pool[%d]".formatted(pool.size()));
@@ -42,6 +56,9 @@ public class ConnectionManager {
         }
     }
 
+    /**
+     * Closes all connections in the pool.
+     */
     public void closePool() {
         try {
             for(Connection sourceConnection : sourceConnections) {
@@ -54,7 +71,11 @@ public class ConnectionManager {
         }
     }
 
-
+    /**
+     * Opens a new database connection.
+     *
+     * @return a new Connection object
+     */
     private Connection open() {
         try {
             return DriverManager.getConnection(
@@ -68,6 +89,9 @@ public class ConnectionManager {
         }
     }
 
+    /**
+     * Initializes the connection pool with the specified size.
+     */
     private void initConnectionPool() {
         String poolSize = PropertyManager.get(POOL_SIZE_KEY);
         int size = poolSize == null ? DEFAULT_POOL_SIZE : Integer.parseInt(poolSize);

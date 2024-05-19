@@ -2,6 +2,7 @@ package com.tritonkor.domain.service.impl;
 
 import com.tritonkor.domain.exception.ImageNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -13,28 +14,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class FileService {
 
-    public Path getPathFromResource(String resourceName) {
-        URL resourceUrl = getClass().getClassLoader().getResource(resourceName);
-        if (resourceUrl == null) {
-            throw new IllegalArgumentException(STR."Resource not found: \{resourceName}");
+    public Path getPathFromResource(String resourceName) throws IOException {
+        ClassLoader classLoader = getClass().getClassLoader();
+        Path tempFile = Files.createTempFile("temp", null);
+        try (InputStream inputStream = classLoader.getResourceAsStream(resourceName)) {
+            if (inputStream == null) {
+                throw new IllegalArgumentException("Resource not found: " + resourceName);
+            }
+            Files.copy(inputStream, tempFile, java.nio.file.StandardCopyOption.REPLACE_EXISTING);
         }
-
-        try {
-            return Paths.get(resourceUrl.toURI());
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(STR."Invalid URI syntax: \{resourceUrl}", e);
-        }
+        return tempFile;
     }
 
-    public byte[] getBytes(Path path) {
-        byte[] fileBytes = null;
-        try {
-            if (Objects.nonNull(path)) {
-                fileBytes = Files.readAllBytes(path);
-            }
-        } catch (IOException e) {
-            throw new ImageNotFoundException();
-        }
-        return fileBytes;
+    public byte[] getBytes(Path path) throws IOException {
+        return Files.readAllBytes(path);
     }
 }

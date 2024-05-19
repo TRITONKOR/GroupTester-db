@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Pagination?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+  xmlns:atlantafx="atlantafx.styles"
+  fx:controller="com.tritonkor.presentation.controller.user.UserListController"
+
+  styleClass="content-container">
+  <left>
+    <VBox spacing="20">
+      <VBox spacing="10">
+        <!-- Header з пошуком і фільтрацією -->
+        <HBox spacing="10" alignment="CENTER_LEFT">
+          <TextField fx:id="searchField" promptText="Пошук за логіном..."
+            styleClass="search-field"/>
+
+          <ComboBox fx:id="roleComboBoxFilter" promptText="Виберіть роль" styleClass="combo-box"/>
+
+          <DatePicker fx:id="birthdayFromPicker" promptText="Дата народження (з)"
+            styleClass="date-picker"/>
+          <DatePicker fx:id="birthdayToPicker" promptText="Дата народження (по)"
+            styleClass="date-picker"/>
+
+          <Button text="Застосувати" onAction="#handleApplyFilters" styleClass="filter-button"/>
+        </HBox>
+
+        <!-- Сортування за логіном -->
+        <HBox spacing="10">
+          <Label text="Сортувати:"/>
+          <Button text="▲ Логін (зрост.)" onAction="#handleSortAscending" styleClass="sort-button"/>
+          <Button text="▼ Логін (спад.)" onAction="#handleSortDescending" styleClass="sort-button"/>
+        </HBox>
+      </VBox>
+
+      <!-- Список користувачів -->
+      <VBox fx:id="userListContainer" spacing="10"/>
+
+      <!-- Пагінація -->
+      <Pagination fx:id="pagination" pageCount="1"/>
+    </VBox>
+  </left>
+  <right>
+    <fx:include source="view/user/CreateUser.fxml"/>
+  </right>
+</BorderPane>
+
